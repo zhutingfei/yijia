@@ -18,7 +18,8 @@ dropDown($('.show-one'), $(".show-list1"));
 dropDown($('.show-two'), $(".show-list2"));
 dropDown($('.show-three'), $(".show-list3"));
 dropDown($('.show-four'), $(".show-list4"));
-dropDown($('.show-five'), $(".show-list5"));
+dropDown($('.show-five'), $(".show-list5")); // 密码显示隐藏
+
 var typeClick = $('.typeClick');
 var falgs = true;
 typeClick.click(function () {
