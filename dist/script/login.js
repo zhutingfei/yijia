@@ -18,7 +18,20 @@ dropDown($('.show-one'), $(".show-list1"));
 dropDown($('.show-two'), $(".show-list2"));
 dropDown($('.show-three'), $(".show-list3"));
 dropDown($('.show-four'), $(".show-list4"));
-dropDown($('.show-five'), $(".show-list5")); //登录功能
+dropDown($('.show-five'), $(".show-list5"));
+var typeClick = $('.typeClick');
+var falgs = true;
+typeClick.click(function () {
+  $(this).children().toggle();
+
+  if (falgs) {
+    $('.pass').prop('type', 'text');
+    falgs = false;
+  } else {
+    $('.pass').prop('type', 'password');
+    falgs = true;
+  }
+}); //登录功能
 
 var submit = $('.submit-btn');
 submit.click(function () {

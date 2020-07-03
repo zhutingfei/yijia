@@ -19,6 +19,22 @@ dropDown($('.show-four'),$(".show-list4"));
 dropDown($('.show-five'),$(".show-list5"));
 
 
+    // 密码显示隐藏
+var typeClick=$('.typeClick');
+var falgs=true;
+typeClick.click(function(){
+    
+  $(this).children().toggle();
+  if(falgs){
+    $('.pass').prop('type','text');
+    falgs=false;
+  }else{
+    $('.pass').prop('type','password');
+    falgs=true;
+  }
+ 
+})
+
 //登录功能
 var submit = $('.submit-btn');
 submit.click(function(){

@@ -215,7 +215,8 @@
       .sign-main .login-container .login-content .margin-4x {
         height: 20px; }
       .sign-main .login-container .login-content .user-input {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        position: relative; }
         .sign-main .login-container .login-content .user-input .login-inp {
           box-sizing: border-box;
           display: block;
@@ -229,6 +230,20 @@
           border: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: 2px;
           outline: none; }
+        .sign-main .login-container .login-content .user-input .typeClick {
+          position: absolute;
+          right: 20px;
+          top: 12px;
+          width: 20px;
+          cursor: pointer; }
+          .sign-main .login-container .login-content .user-input .typeClick img {
+            width: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none; }
+            .sign-main .login-container .login-content .user-input .typeClick img:nth-child(1) {
+              display: block; }
       .sign-main .login-container .login-content .from-group {
         width: 100%;
         height: 40px; }
